@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 :root {
-  --color-dark: #0D0D0D;
-  --color-light: #DCDCD8;
+  --color-dark: #0d0d0d;
+  --color-light: #dcdcd8;
   --color-accent: #932522;
 }
 
@@ -13,6 +14,32 @@
   padding: 0;
   box-sizing: border-box;
   color: var(--color-light);
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-quest {
+  font-family: "Questrial", sans-serif;
+}
+.font-quest span {
+  font-family: "Questrial", sans-serif;
+}
+
+.font-great {
+  font-family: "Great Vibes", cursive;
+}
+.font-great span {
+  font-family: "Great Vibes", cursive;
+}
+
+.font-mont {
+  font-family: "Montserrat", sans-serif;
+}
+.font-mont span {
+  font-family: "Montserrat", sans-serif;
+}
+
+span.font-great {
+  font-family: "Great Vibes", cursive !important;
 }
 
 html {
@@ -28,8 +55,9 @@ html body {
   align-items: center;
   overflow-x: hidden;
   overflow-y: scroll;
-  background: url("/images/noise.png") no-repeat center center/cover;
+  background: url("/images/noise.png") center/cover no-repeat;
   position: relative;
+  @medi;
 }
 html body::-webkit-scrollbar {
   display: none;
@@ -41,10 +69,26 @@ html body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #161616;
-  opacity: 0.9;
+  background: #000000;
+  opacity: 0.8;
   z-index: 1;
 }
 html body section {
+  z-index: 2;
   width: 100%;
+  padding: 2rem;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+h1, h1 span, h2, h3, h4, h5, h6 {
+  font-family: "Great Vibes", cursive;
+  text-transform: capitalize;
 }
