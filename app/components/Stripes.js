@@ -5,7 +5,6 @@ const Stripe = ({ m, baseHeight }) => {
   const marginBottom = (1.2 - m) * baseHeight;
   
   return (
-    console.log(m),
     <div
       style={{ marginBottom: `${marginBottom}px`, height: `${height}px` }}
       className="w-full bg-color-dark"

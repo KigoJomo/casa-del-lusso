@@ -8,7 +8,7 @@
 
 :root {
   --color-dark: #0d0d0d;
-  --color-light: #dcdcd8;
+  --color-light: #b9b9a5;
   --color-accent: #932522;
 }
 
@@ -81,10 +81,10 @@ html {
     section {
       z-index: 2;
       width: 100%;
-      padding: 2rem;
+      padding: 4rem 6rem;
     }
 
-    @media (min-width: 768px) {
+    @media (max-width: 768px) {
       section {
         padding: 1rem;
       }
